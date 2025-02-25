@@ -1,0 +1,77 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main */
+main {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Carrusel */
+#carouselExample {
+    background-color: black; /* Fondo negro */
+    padding: 20px 0; /* Espaciado superior e inferior */
+    position: relative; /* Para que los botones se ubiquen correctamente */
+}
+
+/* Imágenes del carrusel */
+.carousel-item img {
+    max-width: 60%; /* Ajusta el ancho */
+    max-height: 300px; /* Ajusta la altura máxima */
+    object-fit: cover; /* Evita distorsión */
+    margin: 0 auto; /* Centra la imagen */
+    display: block;
+}
+
+/* Botones de navegación del carrusel */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%; /* Reduce el ancho del área de los botones */
+}
+
+/* Iconos de los botones */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    border-radius: 50%; /* Hace los botones redondos */
+    padding: 10px; /* Ajusta el tamaño del botón */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
