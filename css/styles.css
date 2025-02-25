@@ -27,6 +27,34 @@ header nav ul li {
 header nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #555;
+    color: #f4f4f4;
+}
+
+/* Estilo adicional para el Modal */
+.modal-header {
+    background-color: #333;
+    color: white;
+}
+
+.modal-body {
+    background-color: #f4f4f4;
+}
+
+/* Asegurando que cada sección tiene un buen espaciado */
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Main */
@@ -39,30 +67,29 @@ main {
 #carouselExample {
     background-color: black; /* Fondo negro */
     padding: 20px 0; /* Espaciado superior e inferior */
-    position: relative; /* Para que los botones se ubiquen correctamente */
+    position: relative;
 }
 
-/* Imágenes del carrusel */
+/* Estilos para las imágenes del carrusel */
 .carousel-item img {
-    max-width: 60%; /* Ajusta el ancho */
-    max-height: 300px; /* Ajusta la altura máxima */
-    object-fit: cover; /* Evita distorsión */
-    margin: 0 auto; /* Centra la imagen */
+    max-width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    margin: 0 auto;
     display: block;
 }
 
-/* Botones de navegación del carrusel */
+/* Botones del carrusel */
 .carousel-control-prev,
 .carousel-control-next {
-    width: 10%; /* Reduce el ancho del área de los botones */
+    width: 5%;
 }
 
-/* Iconos de los botones */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
-    border-radius: 50%; /* Hace los botones redondos */
-    padding: 10px; /* Ajusta el tamaño del botón */
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 10px;
 }
 
 /* Footer */
@@ -74,4 +101,20 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+footer a:hover {
+    color: #80bfff; /* Azul claro */
+}
+
+/* Desplazamiento suave */
+html {
+    scroll-behavior: smooth;
 }
