@@ -45,7 +45,29 @@
             <p>Información de contacto...</p>
         </section>
 
-        <!-- Acordeón corregido -->
+        <!-- Modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#welcomeModal">
+          Mostrar mensaje de bienvenida
+        </button>
+
+        <div class="modal fade" id="welcomeModal" tabindex="-1" aria-labelledby="welcomeModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="welcomeModalLabel">Bienvenido</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                ¡Bienvenido a nuestro sitio web! Nos alegra tenerte con nosotros.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Acordeón -->
         <div class="accordion" id="accordionExample">
             <div class="accordion-item">
                 <h2 class="accordion-header">
@@ -74,7 +96,7 @@
             </div>
         </div>
 
-        <!-- Carrusel corregido -->
+        <!-- Carrusel -->
         <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -103,14 +125,17 @@
                 <span class="visually-hidden">Siguiente</span>
             </button>
         </div>
-        <br>
-        <br>
 
     </main>
 
-
     <footer>
         <p>&copy; 2024 Empresa Ejemplo. Todos los derechos reservados.</p>
+        <div>
+            <a href="https://www.facebook.com" target="_blank" class="me-3">Facebook</a>
+            <a href="https://www.twitter.com" target="_blank" class="me-3">Twitter</a>
+            <a href="https://www.instagram.com" target="_blank" class="me-3">Instagram</a>
+            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+        </div>
     </footer>
 
     <!-- Bootstrap 5 JS -->
